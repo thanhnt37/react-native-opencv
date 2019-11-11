@@ -16,10 +16,12 @@ Pod::Spec.new do |s|
   s.platforms    = { :ios => "9.0", :tvos => "10.0" }
   s.source       = { :git => "https://github.com/github_account/react-native-opencv.git", :tag => "#{s.version}" }
 
-  s.source_files = "ios/**/*.{h,m,swift}"
+  s.source_files = "ios/**/*.{h,m,mm,swift}"
   s.requires_arc = true
 
   s.dependency "React"
+
+  s.dependency "OpenCV", '~> 4.1.0'
 	
   # s.dependency "..."
 end
